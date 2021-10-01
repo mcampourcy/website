@@ -1,0 +1,17 @@
+body {
+    --code: "Roboto Mono", monospace;
+    --text: "Open Sans", sans-serif;
+
+    --primary: #1e1e1e;
+    --secondary: #f2f2f2;
+    --accent: #fa0087;
+    --light: rgba(0, 0, 0, 0.1);
+    --bg-image: none;
+}
+
+body.dark {
+    --primary: #fff;
+    --secondary: #1e1e1e;
+    --light: rgba(255, 255, 255, 0.3);
+    --dark: rgba(255, 255, 255, 0.1);
+}

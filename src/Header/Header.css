@@ -1,0 +1,58 @@
+header {
+    font-family: var(--code);
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+}
+
+header .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
+}
+
+header .brand {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header button {
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--code);
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+header button:hover {
+    color: var(--primary);
+    cursor: pointer;
+    transition: color ease 0.5s;
+}
+
+header button > span {
+    font-size: small;
+    margin-top: 0.5rem;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 0.5s ease;
+}
+
+header button:hover > span {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 48em) {
+    header .wrapper {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+    }
+}

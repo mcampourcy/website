@@ -1,0 +1,54 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "import/no-cycle": "error",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "max-len": ["error", 120, 2],
+    "no-use-before-define": ["error", { "functions": false }],
+    "no-console": [
+      "warn",
+      {
+        "allow": ["info", "warn", "error"]
+      }
+    ],
+    "object-curly-newline": "off",
+    "react/button-has-type": "off",
+    "react/prefer-stateless-function": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/react-in-jsx-scope": "off",
+    "semi": ["error", "never"]
+  }
+}
