@@ -7,7 +7,7 @@ export function GridItem({ image, slug, title }) {
   return (
     <figure className="grid-item">
       <Link to={`/${slug}`}>
-        <img src={`img/${image}`} alt="" />
+        <img src={`${process.env.PUBLIC_URL}/img/${image}`} alt="" />
         <figcaption>{title}</figcaption>
       </Link>
     </figure>
