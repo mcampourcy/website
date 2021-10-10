@@ -26,7 +26,7 @@ export function App() {
       <Router>
         <main>
           <Switch>
-            <Route path={['/website']}>
+            <Route path="/website" exact>
               <h2>Projects</h2>
               <section className="grid">
                 {projectList.map(p => <GridItem key={p.id} {...p} />)}
