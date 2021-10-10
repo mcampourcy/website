@@ -1,5 +1,11 @@
 .section-page {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.section-page h1 {
+    font-size: 2rem;
 }
 
 .section-page img {
@@ -7,4 +13,31 @@
     max-width: 100%;
     object-fit: cover;
     width: auto;
+}
+
+.section-page .navigation-link {
+    align-items: center;
+    color: var(--dark);
+    display: flex;
+    font-size: smaller;
+    margin-bottom: 2rem;
+}
+
+.section-page .navigation-link:hover {
+    color: var(--accent);
+}
+
+.section-page .navigation-link > svg {
+    margin-right: .8rem;
+}
+
+.section-page .external-link {
+    align-items: center;
+    color: var(--accent);
+    display: flex;
+}
+
+.section-page .external-link > svg {
+    margin-left: .5rem;
+    width: 20px;
 }
