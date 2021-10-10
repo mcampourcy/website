@@ -37,12 +37,12 @@ export function App() {
               </section>
             </Route>
             {projectList.map(project => (
-              <Route path={`/website/${project.slug}`} key={project.id}>
+              <Route path={`/website/${project.slug}`} exact key={project.id}>
                 <Page {...project} />
               </Route>
             ))}
             {talkList.map(talk => (
-              <Route path={`/website/${talk.slug}`} key={talk.id}>
+              <Route path={`/website/${talk.slug}`} exact key={talk.id}>
                 <Page {...talk} />
               </Route>
             ))}
