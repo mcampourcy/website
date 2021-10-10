@@ -33,7 +33,7 @@ export function Header() {
       <div className="wrapper">
         <div>
           <h1>
-            <a href="/" className="brand">
+            <a href="/website" className="brand">
               Mireille Campourcy
             </a>
           </h1>
